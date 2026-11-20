@@ -22,10 +22,7 @@ double calTurnaround(Process cArray[]) {
 
         total = total + turnaround;
 
-        cout << cArray[i].pJob << "\t"
-             << cArray[i].pArrival << "\t"
-             << cArray[i].pCpu << "\t"
-             << turnaround << endl;
+        cout << cArray[i].pJob << "\t" << cArray[i].pArrival << "\t" << cArray[i].pCpu << "\t" << turnaround << endl;
     }
 
     return total / 10.0;
@@ -55,8 +52,7 @@ int main() {
 
     double average = calTurnaround(jobs);
 
-    cout << fixed << setprecision(2);
-    cout << "Average Turnaround Time: " << average << endl;
+    cout << fixed << setprecision(2); cout << "Average Turnaround Time: " << average << endl;
 
     return 0;
 }
